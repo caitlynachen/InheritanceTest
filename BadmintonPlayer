@@ -1,0 +1,49 @@
+# InnerClassPractice
+package jrJava.innerClassPractice;
+
+public class BadmintonPlayer implements Bintang.Callback {
+
+	//attributes
+	//methods
+	
+	Bintang bintang = new Bintang();
+	
+	public void apply(){
+		bintang.addCallbacks(
+				
+				new Bintang.Callback() {
+					
+					
+					public void statusChanged() {
+						
+					}
+					
+					
+					public void letsPlay() {
+						
+					}
+					
+					
+					public void aborted() {
+						
+					}
+				}
+			
+		);
+	}
+
+	
+	public void letsPlay() {
+		
+	}
+
+	
+	public void aborted() {
+		
+	}
+
+	
+	public void statusChanged() {
+		
+	}
+}
