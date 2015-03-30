@@ -1,0 +1,26 @@
+package jrJava.innerClassPractice;
+
+import java.util.ArrayList;
+
+public class Bintang {
+
+	private ArrayList<Callback> list = new ArrayList<Callback>();
+	
+	public void addCallbacks(Callback callback){
+		list.add(callback);
+		
+		//do other things
+		
+	}
+	
+	public void notifyAllCallbacks(){
+		//using for loop. it will notify the callbacks(players).
+		
+	}
+	
+	public interface Callback {
+		public void letsPlay();
+		public void aborted();
+		public void statusChanged();
+	}
+}
